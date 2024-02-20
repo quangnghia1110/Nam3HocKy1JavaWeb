@@ -1,0 +1,81 @@
+
+/* Common */
+.no-border {
+	border: none!important; 
+}
+
+.black-text {
+	color: #000!important;
+}
+
+.white-text {
+	color: #fff!important;
+}
+
+.b6-text {
+	color: #B6B6B6!important;
+}
+
+.bold-text {
+	font-weight: bold!important;
+}
+
+.no-decor-text {
+	text-decoration: none!important;
+}
+
+.ml-1 {
+	margin-left: 1rem!important;
+}
+
+.ml-6 {
+	margin-left: 6px !important;
+}
+
+.mb-2 {
+	margin-bottom: 2rem!important;
+}
+
+.mt-2 {
+	margin-top: 2rem!important;
+}
+
+.fs-18 {
+	font-size: 1.25rem!important;
+}
+
+.add-to-cart-btn:hover {
+	color: #fff!important;
+}
+
+/* breadcrumb */
+.breadcrumb {
+	background: none;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #000!important;
+}
+
+/* btn */
+.btn {
+	border-radius: 0.75rem!important;
+}
+
+.btn-dark {
+    background-color: #000!important;
+    border-color: #000!important;
+}
+
+/* card */
+.card {
+    border: none; 
+}
+
+.card-img-top {
+    border-radius: 15px; 
+}
+
+.card-title {
+	margin-bottom: 24px !important;
+}

@@ -1,0 +1,43 @@
+.orderr {
+	background-image: url("https://phuclong.com.vn/images/background/bg_tealeaf.svg");
+}
+
+.card {
+	margin: 10px;
+}
+
+.list-group .btn-outline-dark {
+	margin-bottom: 10px;
+}
+
+.container .order-item {
+	margin-bottom: 16px !important;
+	background-color: #fff;
+}
+
+.container .order-item:hover {
+	color: #fff;
+	background-color: #343a40;
+	border-color: #343a40;
+}
+	
+.container .order-item-active {
+	background-color: #000 !important;
+	color: #fff !important;
+}
+
+.card {
+	margin-bottom: 16px !important;
+}
+
+.card-header {
+	border-top-left-radius: 24px !important;
+	border-top-right-radius: 24px !important;
+}
+
+.order-title {
+	font-size: 32px;
+	font-weight: 700;
+	font-style: italic;
+	margin-bottom: 16px;
+}

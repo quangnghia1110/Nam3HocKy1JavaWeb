@@ -1,0 +1,42 @@
+footer {
+    background-color: aliceblue; /* Màu nền của footer */
+    padding: 40px 0; /* Khoảng cách giữa nội dung và mép của footer */
+}
+
+/* Style cho các phần con trong footer */
+.footer-content h3 {
+    color: black; /* Màu chữ của tiêu đề */
+}
+
+.footer-content a {
+    color: black; /* Màu chữ của các liên kết */
+    text-decoration: none; /* Ẩn dấu gạch chân */
+}
+
+.footer-content a:hover {
+    color: darkorange; /* Màu chữ của các liên kết khi hover */
+    text-decoration: none; /* Ẩn dấu gạch chân */
+}
+
+.footer-content p {
+	color: black;
+}
+
+/* Style cho logo thương hiệu */
+.footer-content img {
+	width: 100px;
+	height: 100px;
+}
+
+.footer-social {
+	display: flex;
+	align-items: center;
+}
+
+.footer-social p {
+	margin: 0 6px;
+}
+
+.footer-social p a{
+	font-size: 24px;
+}

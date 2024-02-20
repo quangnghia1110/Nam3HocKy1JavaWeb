@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.branch_info {
+	background-image: url("https://phuclong.com.vn/images/background/bg_tealeaf.svg");
+}
+
+.store_image {
+	width: 530px;
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	flex-shrink: 0;
+	max-width: 100%;
+	border-radius: 12px;
+	background: var(--neutral-05, #D6D6D6);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.branches_info_body {
+	padding-left: 32px;
+}
+
+.branches_info_name {
+	color: var(--neutral-01, #000);
+	font-size: 42px;
+	font-style: normal;
+	font-weight: 700;
+	font-style: italic;
+	line-height: 54px;
+}
+
+.branches_info_desc {
+	color: var(--bs-gray);
+	text-align: justify;
+	font-size: 16px;
+	letter-spacing: .5px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+.branches_info_address b,
+.branches_info_open b {
+	font-size: 18px;
+}
+
+.branches_info_address p,
+.branches_info_open p {
+	font-size: 16px;
+}
+
+
+.branches_info_btn {
+	width: 100%;
+	text-align: center;
+	align-self: center;
+	background-color: #fff;
+	background-image: none;
+	background-position: 0 90%;
+	background-repeat: repeat no-repeat;
+	background-size: 4px 3px;
+	border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+	box-sizing: border-box;
+	color: #41403e;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Neucha, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 23px;
+	outline: none;
+	padding: .75rem;
+	text-decoration: none;
+	transition: all 235ms ease-in-out;
+	border-bottom-left-radius: 15px 255px;
+	border-bottom-right-radius: 225px 15px;
+	border-top-left-radius: 255px 15px;
+	border-top-right-radius: 15px 225px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	text-decoration: none !important;
+	margin-bottom: 8px;
+}
+
+.branches_info_btn:hover {
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+	transform: translate3d(0, 2px, 0);
+}
+
+.branches_info_btn:focus {
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}

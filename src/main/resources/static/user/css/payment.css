@@ -1,0 +1,121 @@
+.payment {
+	display: flex;
+	margin-top: 80px;
+}
+
+.payment-content {
+	padding: 24px 0 56px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.check-label {
+	font-size: 18px;
+	font-weight: 700;
+	font-style: italic;
+	color: red;
+}
+
+.cart-quantity,
+.product-size {
+	margin: 0;
+}
+
+.cart-price-payment {
+	margin: 0;
+}
+
+.cart-quantity {
+	margin-left: 8px;
+	font-size: 20px;
+	font-weight: 700;
+	color: blueviolet;
+}
+
+.payment-product-image {
+	--size: 60px !important;
+	width: var(--size) !important;
+	height: var(--size) !important;
+}
+
+.list-product-choosen {
+	padding: 0;
+	height: 300px;
+	overflow: auto;
+}
+
+.payment-item {
+	width: 100% !important; 
+}
+
+.payment-note {
+	margin-top: 32px;
+}
+
+.payment-price {
+	margin-top: 32px;
+}
+
+.payment-price ul {
+	list-style: none;
+	padding: 0;
+}
+
+.payment-price ul li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+}
+
+.payment-price ul li  {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 12px 0;
+	border-bottom: 1px solid #ccc;
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.payment-price ul li p {
+	margin: 0;
+}
+
+.payment-price-value {
+	font-size: 20px;
+	color: red;
+}
+
+.payment-btn {
+	margin-top: 20px;
+	float: right;
+}
+
+.places-result {
+	list-style: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	background-color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	z-index: 100;
+}
+
+.radio-branch:checked + .list-branches-item-info .list-branches-item-name {
+    color: red; 
+}
+
+.places-result-item {
+	padding: 6px 12px;
+	cursor: pointer;
+}
+
+.places-result-item:hover {
+	background-color: #ccc;
+}

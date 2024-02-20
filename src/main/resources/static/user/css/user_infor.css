@@ -1,0 +1,83 @@
+
+.user-infor-title{
+    display: flex;
+    justify-content: center;
+    line-height: 48px;
+    font-weight: 700;
+    font-size: 38px;
+    padding:16px;
+}
+.user-infor-container{
+    width: 600px;
+    margin:auto;
+}
+.user-name-textbox{
+    display: flex;
+    justify-content: space-between;
+}
+.user-lastname-textbox,
+.user-surname-textbox{
+    width:48%;
+
+}
+input{
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.user-birthday-textbox,
+.user-email-textbox{
+    width:100%;
+    background-color: #d6d6d6;
+    border: none;
+}
+.user-phone-textbox{
+    width:100%;
+    border: 1px solid;
+}
+.textbox{
+    padding:8px;
+}
+.user-infor{
+    margin: 12px 0 8px;
+}
+#nam, #nu{
+    margin:16px ;
+}
+.user-update-button{
+	margin-top:16px;
+	align-self: center;
+	background-color: #fff;
+	background-image: none;
+	background-position: 0 90%;
+	background-repeat: repeat no-repeat;
+	background-size: 4px 3px;
+	border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+	box-sizing: border-box;
+	color: #41403e;
+	cursor: pointer;
+	display: block;
+	font-family: Neucha, sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 23px;
+	outline: none;
+	padding: .75rem;
+	text-decoration: none;
+	transition: all 235ms ease-in-out;
+	border-bottom-left-radius: 15px 255px;
+	border-bottom-right-radius: 225px 15px;
+	border-top-left-radius: 255px 15px;
+	border-top-right-radius: 15px 225px;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.user-update-button:hover{
+	box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+	transform: translate3d(0, 2px, 0);
+}
