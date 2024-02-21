@@ -67,6 +67,8 @@
 ## Cấu trúc dự án
 <pre>
 <b>projectJavaWeb</b>
+├── database
+├── github
 ├── src
 │   ├── main
 │   │   ├── <b>java</b>
