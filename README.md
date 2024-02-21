@@ -42,6 +42,7 @@
     - Thực hiện restored database trong Microsoft SQL Server Management Studio 
     - Mở project vừa clone về trong Eclipse IDE for Enterprise Java and Web Developers
     - Tạo servers (ở đây là apache-tomcat)
+    - Thực hiện update maven để nó download các thư viện về
     - Ấn Alt+Shift+X, B để có thể chạy project
 ## Tài liệu
 - File báo cáo: [Báo cáo đồ án cuối kỳ web](https://docs.google.com/document/d/16XekAK2jCEcMKaYo8waotoBbjcPuryvB/edit?usp=sharing&ouid=107759858224619439962&rtpof=true&sd=true)
