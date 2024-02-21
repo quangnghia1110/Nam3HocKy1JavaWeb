@@ -56,6 +56,7 @@
       - Mật khẩu: 123456789
 - Lưu ý:
     - Hướng dẫn cách thanh toán bằng VNPay: [VNPay](https://drive.google.com/file/d/1zPrMAw4PcjseSqqzCZrtUm2wpfuDdQ3n/view?usp=sharing)
+    - Tạo mật khẩu ứng dụng để dử dụng gửi mail: [Mail](https://myaccount.google.com/u/1/apppasswords?rapt=AEjHL4Nn2OmjkHZ6MTBv9WjVQVHKaqF2LihjBb9p5l_JFHxGadm7UpecA1Z-VUp7m8yh3Im3lDhexnKboJIGKBchKZhSoI9YjSFfXZMzfIc-5F895K0EnXc)
     - Sử dụng một vài API trên [Google Developer Console](https://console.cloud.google.com/apis/library?project=indigo-codex-415011), để kích hoạt được API cần phải có thẻ VISA
       - Distance Matrix API (Tính phí ship và thời gian ship)
       - Google Maps Platform APIs (Gợi ý địa điểm gần đúng khi tìm kiếm)  
