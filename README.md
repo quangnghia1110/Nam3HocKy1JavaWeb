@@ -27,7 +27,22 @@
 - Integrated development environment (IDE) : **Eclipse IDE for Enterprise Java and Web Developers - 2023-06**
 
 ## Hướng dẫn cài đặt
-
+- Yêu cầu:
+    -  Phải có Eclipse IDE for Enterprise Java and Web Developers và Microsoft SQL Server Management Studio tồn tại trên máy tính
+    -  [Tải JDK phù hợp](https://www.oracle.com/java/technologies/downloads/) => Project đang sử dụng JDK 20
+    -  [Tải apache-tomcat phù hợp](https://tomcat.apache.org/) => Project đang sử dụng apache-tomcat 10.1.14
+    -  [Tải apache-maven phù hợp](https://maven.apache.org/download.cgi) => Project đang sử dụng apache-maven 3.9.4
+    -  Cài một vài featured trong Eclipse MarketPlace:
+        - Eclipse Enterprise Java and Web Developer Tools 3.30
+        - Spring Tools 4 (aka Spring Tool Suite) 4.21.1.RELEASE
+        - [Lombok](https://projectlombok.org/setup/eclipse)
+- Các bước làm:
+    - Clone project về thư mục: https://github.com/quangnghia1110/project_java_web.git
+    - Tạo môi trường cho maven và jdk
+    - Thực hiện restored database trong Microsoft SQL Server Management Studio 
+    - Mở project vừa clone về trong Eclipse IDE for Enterprise Java and Web Developers
+    - Tạo servers (ở đây là apache-tomcat)
+    - Ấn Alt+Shift+X, B để có thể chạy project
 ## Tài liệu
 - File báo cáo: [Báo cáo đồ án cuối kỳ web](https://docs.google.com/document/d/16XekAK2jCEcMKaYo8waotoBbjcPuryvB/edit?usp=sharing&ouid=107759858224619439962&rtpof=true&sd=true)
 - File backup database: [MILKTEA.bak](https://drive.google.com/file/d/16DzHS1CZa2BDaC6ZbWUolUIb9b2UeJCs/view?usp=sharing)
