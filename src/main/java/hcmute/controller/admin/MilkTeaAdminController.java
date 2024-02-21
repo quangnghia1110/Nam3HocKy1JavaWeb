@@ -76,7 +76,8 @@ public class MilkTeaAdminController {
 				entity.setImage(milkTea.getImage());
 			}
 			Optional<MilkTeaTypeEntity> opt = milkTeaTypeService.findById(milkTea.getMilkTeaTypeId());
-			entity.setMilkTeaTypeByMilkTea(opt.get());
+			opt.ifPresent(milkTeaTypeEntity -> entity.setMilkTeaTypeByMilkTea(milkTeaTypeEntity));
+
 			if(!milkTea.getImageFile().isEmpty()) {
 				UUID uuid = UUID.randomUUID();
 				String uuString = uuid.toString();
@@ -100,20 +101,27 @@ public class MilkTeaAdminController {
 				.header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=\"" + file.getFilename() + "\"")
 				.body(file);
 	}
-	@GetMapping("edit/{idBranch}")
-	public ModelAndView edit(ModelMap model, @PathVariable("idBranch") int idBranch) {
-		Optional<MilkTeaEntity> opt = milkTeaService.findById(idBranch);
+	@GetMapping("edit/{idMilkTea}")
+	public ModelAndView edit(ModelMap model, @PathVariable("idMilkTea") int idMilkTea) {
+		Optional<MilkTeaEntity> opt = milkTeaService.findById(idMilkTea);
 		MilkTeaModel milkTea = new MilkTeaModel();
 		if (opt.isPresent()) {
 			MilkTeaEntity entity = opt.get();
 			BeanUtils.copyProperties(entity, milkTea);
 			milkTea.setIsEdit(true);
-			model.addAttribute("milk", milkTea);
+			model.addAttribute("milkTea", milkTea);
 			return new ModelAndView("admin/customize/customize-milk-tea", model);
 		}
 
-		model.addAttribute("message", "Branch không tồn tại");
+		model.addAttribute("message", "MilkTea không tồn tại");
 		return new ModelAndView("forward:/admin/milk-tea", model);
 	}
-
+	
+	@GetMapping("delete/{idMilkTea}")
+	public ModelAndView delete(ModelMap model, @PathVariable("idMilkTea") int idMilkTea) {
+		milkTeaService.deleteById(idMilkTea);
+		model.addAttribute("message", "MilkTea đã xóa thành công");
+		return new ModelAndView("forward:/admin/milk-tea", model);
+	}
+	
 }

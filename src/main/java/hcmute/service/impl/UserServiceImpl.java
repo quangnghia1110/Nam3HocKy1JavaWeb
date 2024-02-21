@@ -1,8 +1,12 @@
 package hcmute.service.impl;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 
+import javax.imageio.ImageIO;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 import javax.transaction.Transactional;
@@ -114,7 +118,7 @@ public class UserServiceImpl implements IUserService {
         userRoleRepo.save(new UserRoleEntity(user, role.get()));
         sendVerifyEmail(user, url);
     }
-
+  
     //Gửi mail xác thực khi đăng ký
     @Override
     public void sendVerifyEmail(UserEntity user, String url) throws MessagingException {

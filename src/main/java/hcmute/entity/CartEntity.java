@@ -1,6 +1,7 @@
 package hcmute.entity;
 
 import java.io.Serializable;
+import java.util.Objects;
 import java.util.Set;
 
 import javax.persistence.*;

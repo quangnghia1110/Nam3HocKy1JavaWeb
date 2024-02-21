@@ -81,7 +81,7 @@
 								${milkTea.isEdit ? 'readonly':'' } name="milkTeaTypeId"
 								type="text" class="form-control" id="exampleInputTypeId"
 								aria-describedby="typeIdHelp"
-								value="${milkTea.milkTeaTypeByMilkTea.idType}"
+								value="${milkTea.milkTeaTypeByMilkTea.name}"
 								required="required">
 						</div>
 

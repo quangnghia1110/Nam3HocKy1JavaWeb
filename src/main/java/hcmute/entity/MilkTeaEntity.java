@@ -35,12 +35,12 @@ public class MilkTeaEntity implements Serializable {
 	@JoinColumn(name = "id_type")
 	private MilkTeaTypeEntity milkTeaTypeByMilkTea;
 
-	@OneToMany(mappedBy = "milkTeaByCartDetail")
+	@OneToMany(mappedBy = "milkTeaByCartDetail", cascade = CascadeType.ALL)
 	private Set<CartDetailEntity> cartDetails;
 
 	@OneToMany(mappedBy = "milkTeaByOrderDetail")
 	private Set<OrderDetailEntity> orderDetails;
 	
-	@OneToMany(mappedBy = "milkTeaByBranchMilkTea")
+	@OneToMany(mappedBy = "milkTeaByBranchMilkTea", cascade = CascadeType.ALL)
 	private Set<BranchMilkTea> branchMilkTeas;
 }

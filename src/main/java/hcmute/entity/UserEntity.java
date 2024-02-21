@@ -3,6 +3,7 @@ package hcmute.entity;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 import javax.persistence.Column;
@@ -63,7 +64,7 @@ public class UserEntity implements Serializable{
 	
 	@Column(name = "gender")
 	private int gender;
-    
+	
     @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private List<UserRoleEntity> authorities;

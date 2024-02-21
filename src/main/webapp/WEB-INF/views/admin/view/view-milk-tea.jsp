@@ -96,6 +96,7 @@ svg {
 											src="${imgUrl }" /></td>
 										<td><a class="btn btn-success"
 											href="/admin/milk-tea/edit/${milkTea.idMilkTea}">edit</a></td>
+
 									</tr>
 								</c:forEach>
 							</tbody>

@@ -32,7 +32,10 @@ public class MilkTeaServiceImpl implements IMilkTeaService {
 		this.orderDetailRepository = orderDetailRepository;
 	}
 
-
+	@Override
+	public void deleteById(Integer id) {
+		milkTeaRepository.deleteById(id);
+	}
 	@Override
 	public Optional<MilkTeaEntity> findByIdMilkTea(int id) {
 		return milkTeaRepository.findByIdMilkTea(id);

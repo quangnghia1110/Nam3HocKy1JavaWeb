@@ -50,5 +50,6 @@ public interface IMilkTeaService {
 	Optional<Integer> findRemainQuantityByIdMilkTeaAndIdBranch(int idMilkTea, int idBranch);
 
 	Optional<MilkTeaEntity> findById(Integer id);
+	void deleteById(Integer id);
 
 }
