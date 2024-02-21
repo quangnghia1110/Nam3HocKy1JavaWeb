@@ -26,7 +26,7 @@
 - Design pattern : **Model - View - Controller (MVC)**
 - Integrated development environment (IDE) : **Eclipse IDE for Enterprise Java and Web Developers - 2023-06**
 
-## Hướng dẫn cài đặt
+## Hướng dẫn cài đặt và sử dụng
 - Yêu cầu:
     -  Phải có Eclipse IDE for Enterprise Java and Web Developers và Microsoft SQL Server Management Studio tồn tại trên máy tính
     -  [Tải JDK phù hợp](https://www.oracle.com/java/technologies/downloads/) => Project đang sử dụng JDK 20
@@ -44,13 +44,28 @@
     - Tạo servers (ở đây là apache-tomcat)
     - Thực hiện update maven để nó download các thư viện về
     - Ấn Alt+Shift+X, B để có thể chạy project
+- Tài khoản đăng nhập demo:
+    - Quyền Admin:
+      - Tài khoản: admin
+      - Mật khẩu: 123456789 
+    - Quyền Manager:
+      - Tài khoản: manager
+      - Mật khẩu: 123456789 
+    - Quyền User:
+      - Tài khoản: user
+      - Mật khẩu: 123456789
+- Lưu ý:
+    - Hướng dẫn cách thanh toán bằng VNPay: [VNPay](https://drive.google.com/file/d/1zPrMAw4PcjseSqqzCZrtUm2wpfuDdQ3n/view?usp=sharing)
+    - Sử dụng một vài API trên [Google Developer Console](https://console.cloud.google.com/apis/library?project=indigo-codex-415011), để kích hoạt được API cần phải có thẻ VISA
+      - Distance Matrix API (Tính phí ship và thời gian ship)
+      - Google Maps Platform APIs (Gợi ý địa điểm gần đúng khi tìm kiếm)  
 ## Tài liệu
 - File báo cáo: [Báo cáo đồ án cuối kỳ web](https://docs.google.com/document/d/16XekAK2jCEcMKaYo8waotoBbjcPuryvB/edit?usp=sharing&ouid=107759858224619439962&rtpof=true&sd=true)
-- File backup database: [MILKTEA.bak](https://drive.google.com/file/d/16DzHS1CZa2BDaC6ZbWUolUIb9b2UeJCs/view?usp=sharing)
+- File backup database: [projectJavaWeb.bak](https://drive.google.com/file/d/1vwR_-mr2Xb9uLyjfHoQL84ImQnnpbP9k/view?usp=sharing)
 
-## Project Structure
+## Cấu trúc dự án
 <pre>
-<b>eCommerceWebsite</b>
+<b>projectJavaWeb</b>
 ├── src
 │   ├── main
 │   │   ├── <b>java</b>
