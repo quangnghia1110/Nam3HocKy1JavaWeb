@@ -54,7 +54,7 @@
                                         	<td>${milkTeaType.idType}</td>
                                         	<td>${milkTeaType.name}</td>
                                         	<td>${milkTeaType.milkTeaCategoryByMilkTeaType.name}</td>
-                                        	<td><a class="btn btn-success" href="/admin/milk-tea-type/edit/${type.idType}">edit</a></td>
+                                        	<td><a class="btn btn-success" href="/admin/milk-tea-type/edit/${milkTeaType.idType}">edit</a></td>
                                    	 	</tr>
                                 	</c:forEach>
                             	</tbody>

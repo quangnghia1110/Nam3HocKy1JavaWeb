@@ -45,7 +45,7 @@
 								Milk Tea*</label> <input placeholder="Milk Tea ID" name="idMilkTea"
 								type="text" class="form-control" id="exampleInputMilkTeaId"
 								aria-describedby="milkTeaIdHelp" value="${milkTea.idMilkTea}"
-								${loguser} required="required" disabled>
+								${loguser} required="required" readonly="readonly">
 						</div>
 
 						<!-- Name -->
@@ -81,7 +81,7 @@
 								${milkTea.isEdit ? 'readonly':'' } name="milkTeaTypeId"
 								type="text" class="form-control" id="exampleInputTypeId"
 								aria-describedby="typeIdHelp"
-								value="${milkTea.milkTeaTypeByMilkTea.name}"
+								value="${milkTea.milkTeaTypeId}"
 								required="required">
 						</div>
 

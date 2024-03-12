@@ -63,8 +63,10 @@ public class MilkTeaAdminController {
 	public ModelAndView saveOrUpdate(ModelMap model, @Valid @ModelAttribute("milkTea") MilkTeaModel milkTea,
 			BindingResult result,@RequestParam("imageFile") MultipartFile imageFile) {
 		
+		System.out.print(milkTea.getIdMilkTea());
 		if (milkTea != null) {
-			MilkTeaEntity entity = new MilkTeaEntity();
+			MilkTeaEntity entity = milkTeaService.findById(milkTea.getIdMilkTea()).get();
+//			MilkTeaEntity entity = new MilkTeaEntity();
 			if (milkTea.getName() != null) {
 				entity.setName(milkTea.getName());
 			}
@@ -76,8 +78,7 @@ public class MilkTeaAdminController {
 				entity.setImage(milkTea.getImage());
 			}
 			Optional<MilkTeaTypeEntity> opt = milkTeaTypeService.findById(milkTea.getMilkTeaTypeId());
-			opt.ifPresent(milkTeaTypeEntity -> entity.setMilkTeaTypeByMilkTea(milkTeaTypeEntity));
-
+			entity.setMilkTeaTypeByMilkTea(opt.get());
 			if(!milkTea.getImageFile().isEmpty()) {
 				UUID uuid = UUID.randomUUID();
 				String uuString = uuid.toString();
@@ -101,27 +102,21 @@ public class MilkTeaAdminController {
 				.header(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=\"" + file.getFilename() + "\"")
 				.body(file);
 	}
-	@GetMapping("edit/{idMilkTea}")
-	public ModelAndView edit(ModelMap model, @PathVariable("idMilkTea") int idMilkTea) {
-		Optional<MilkTeaEntity> opt = milkTeaService.findById(idMilkTea);
+	@GetMapping("edit/{idBranch}")
+	public ModelAndView edit(ModelMap model, @PathVariable("idBranch") int idBranch) {
+		Optional<MilkTeaEntity> opt = milkTeaService.findById(idBranch);
 		MilkTeaModel milkTea = new MilkTeaModel();
 		if (opt.isPresent()) {
 			MilkTeaEntity entity = opt.get();
 			BeanUtils.copyProperties(entity, milkTea);
 			milkTea.setIsEdit(true);
+			milkTea.setMilkTeaTypeId(entity.getMilkTeaTypeByMilkTea().getIdType());
 			model.addAttribute("milkTea", milkTea);
 			return new ModelAndView("admin/customize/customize-milk-tea", model);
 		}
 
-		model.addAttribute("message", "MilkTea không tồn tại");
+		model.addAttribute("message", "Branch không tồn tại");
 		return new ModelAndView("forward:/admin/milk-tea", model);
 	}
-	
-	@GetMapping("delete/{idMilkTea}")
-	public ModelAndView delete(ModelMap model, @PathVariable("idMilkTea") int idMilkTea) {
-		milkTeaService.deleteById(idMilkTea);
-		model.addAttribute("message", "MilkTea đã xóa thành công");
-		return new ModelAndView("forward:/admin/milk-tea", model);
-	}
-	
+
 }
