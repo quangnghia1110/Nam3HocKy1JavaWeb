@@ -71,7 +71,7 @@ paymentBtn.addEventListener('click', function() {
 			orderData.idPayMethod = item.getAttribute('data-id');
 		}
 	})
-	const check = orderData.idPayMethod == 'VNPAY';
+	const check = orderData.idPayMethod == 'VNPay';
 
 	if (!agreeCheckbox.checked) {
 		alert('Bạn cần đồng ý với điều khoản trước khi thanh toán.');
@@ -220,7 +220,6 @@ listRadioBranch.forEach((radio, index) => {
 		}
 	});
 });
-
 
 
 
