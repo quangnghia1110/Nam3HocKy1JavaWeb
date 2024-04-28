@@ -66,7 +66,11 @@
 						class="user-surname-textbox textbox" name="surname"
 						value="${user.surname}" required placeholder="Họ khách hàng">
 				</div>
-
+				<div class="user-infor user-name">UserName</div>
+				<div class="user-infor user-name-textbox">
+					<input type="text" class="user-lastname-textbox textbox"
+						name="username" value="${user.username}" required
+						placeholder="Username" readonly>
 				<div class="user-infor user-phone">Số điện thoại</div>
 				<input type="tel" id="phone" class="user-phone-textbox textbox"
 					name="phoneNumber" value="${user.phoneNumber}" pattern="0\d{9}"
